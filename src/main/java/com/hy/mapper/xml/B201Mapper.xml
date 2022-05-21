@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hy.mapper.B201Mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hy.entity.B201">
+        <id column="id" property="id" />
+        <result column="zzjgdm" property="zzjgdm" />
+        <result column="hydm" property="hydm" />
+        <result column="sjcld" property="sjcld" />
+        <result column="hydm_new" property="hydmNew" />
+        <result column="deleted" property="deleted" />
+        <result column="creat_time" property="creatTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, zzjgdm, hydm, sjcld, hydm_new, deleted, creat_time, update_time
+    </sql>
+
+</mapper>
